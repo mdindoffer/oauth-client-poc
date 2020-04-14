@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework:
+      security: DEBUG
+
+eu.dindoffer.example.oauth.client:
+  oauth:
+    example-registration:
+      clientId: b7d43f9b-a78a-4907-a6d2-a5e94c15dbc0
+      clientSecret: 22f7c0f6-0218-4fd9-a4b7-500faaa2b2da
+      accessTokenUri: https://webapi.developers.erstegroup.com/api/csas/sandbox/v1/sandbox-idp/token
+      userAuthorizationUri: https://webapi.developers.erstegroup.com/api/csas/sandbox/v1/sandbox-idp/auth
+      authenticationScheme: header
+      clientAuthenticationScheme: form
+      preEstablishedRedirectUri: http://localhost:8080/authorize/oauth2/code/example
+      use-current-uri: false
+      scope: kyc
